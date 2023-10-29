@@ -1,0 +1,16 @@
+{
+    "name": "Shop",
+    "rootNamespace": "EpicRiftTest",
+    "references": [
+        "GUID:fc253c52bcff1fa4eb9acf8b7d2dc326"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
