@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de0a72379e243fbacd5f2a772433a18, type: 3}
+  m_Name: Shop_Configuration
+  m_EditorClassIdentifier: 
+  _shopBundles:
+  - _price:
+      _spendable:
+        rid: 2652374566233964549
+      _value: 0
+    _reward:
+      _reward:
+        rid: 2652374566233964550
+      _value: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2652374566233964549
+      type: {class: LocationSpendable, ns: EpicRiftTest.Modules.Location.Data, asm: Location}
+      data: 
+    - rid: 2652374566233964550
+      type: {class: LocationReward, ns: EpicRiftTest.Modules.Location.Data, asm: Location}
+      data: 
