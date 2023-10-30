@@ -6,9 +6,12 @@ namespace EpicRiftTest.Modules.Health.Data
     [Serializable]
     public class PercentageHealthReward : IReward
     {
-        public void ApplyReward(int value)
+        public void ApplyReward(string value)
         {
-            HealthManager.Instance.AddHealthFromPercentage(value);
+            if (Int32.TryParse(value, out int correctValue))
+            {
+                HealthManager.Instance.AddHealthFromPercentage(correctValue);
+            }
         }
     }
 }

@@ -15,46 +15,18 @@ MonoBehaviour:
   _shopBundles:
   - _price:
       _spendable:
-        rid: 2652374575031779330
-      _value: 200
+        rid: 2652374575031779351
+      _value: 300
     _reward:
       _reward:
-        rid: 2652374575031779331
-      _value: 20
-  - _price:
-      _spendable:
-        rid: 2652374575031779332
-      _value: 200
-    _reward:
-      _reward:
-        rid: 2652374575031779333
-      _value: 10
-  - _price:
-      _spendable:
-        rid: 2652374575031779334
-      _value: 200
-    _reward:
-      _reward:
-        rid: 2652374575031779335
-      _value: 1
+        rid: 2652374575031779352
+      _value: asdasda
   references:
     version: 2
     RefIds:
-    - rid: 2652374575031779330
-      type: {class: GoldSpendable, ns: EpicRiftTest.Modules.Gold.Data, asm: Gold}
-      data: 
-    - rid: 2652374575031779331
-      type: {class: HealthReward, ns: EpicRiftTest.Modules.Health.Data, asm: Health}
-      data: 
-    - rid: 2652374575031779332
+    - rid: 2652374575031779351
       type: {class: HealthSpendable, ns: EpicRiftTest.Modules.Health.Data, asm: Health}
       data: 
-    - rid: 2652374575031779333
+    - rid: 2652374575031779352
       type: {class: GoldReward, ns: EpicRiftTest.Modules.Gold.Data, asm: Gold}
-      data: 
-    - rid: 2652374575031779334
-      type: {class: GoldSpendable, ns: EpicRiftTest.Modules.Gold.Data, asm: Gold}
-      data: 
-    - rid: 2652374575031779335
-      type: {class: LocationReward, ns: EpicRiftTest.Modules.Location.Data, asm: Location}
       data: 

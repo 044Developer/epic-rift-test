@@ -6,7 +6,7 @@ namespace EpicRiftTest.Modules.Location.Data
     [Serializable]
     public class LocationReward : IReward
     {
-        public void ApplyReward(int value)
+        public void ApplyReward(string value)
         {
             LocationManager.Instance.PurchaseLocation(value);
         }

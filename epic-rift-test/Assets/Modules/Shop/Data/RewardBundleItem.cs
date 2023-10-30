@@ -9,9 +9,9 @@ namespace EpicRiftTest.Modules.Shop.Data
     public class RewardBundleItem
     {
         [SerializeReference, SelectImplementation(typeof(IReward))] private IReward _reward;
-        [SerializeField] private int _value;
+        [SerializeField] private string _value;
 
         public IReward Reward => _reward;
-        public int Value => _value;
+        public string Value => _value;
     }
 }

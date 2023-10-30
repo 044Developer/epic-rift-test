@@ -6,9 +6,12 @@ namespace EpicRiftTest.Modules.Gold.Data
     [Serializable]
     public class GoldReward : IReward
     {
-        public void ApplyReward(int value)
+        public void ApplyReward(string value)
         {
-            GoldManager.Instance.TopUpGold(value);
+            if (Int32.TryParse(value, out var correctValue))
+            {
+                GoldManager.Instance.TopUpGold(correctValue);
+            }
         }
     }
 }

@@ -1,29 +1,22 @@
-using EpicRiftTest.Modules.Location.Data;
-
 namespace EpicRiftTest.Modules.Location.Models
 {
     public class LocationInventory
     {
-        private LocationType _currentLocation;
+        private string _currentLocation;
 
-        public LocationInventory(LocationType startLocation)
+        public LocationInventory(string startLocation)
         {
             _currentLocation = startLocation;
         }
 
         public string GetCurrentLocationName()
         {
-            return $"{_currentLocation.ToString()}";
+            return _currentLocation;
         }
 
-        public void ChangeLocation(int locationIndex)
+        public void ChangeLocation(string locationName)
         {
-            _currentLocation = (LocationType)locationIndex;
-        }
-
-        public void ChangeLocation(LocationType locationType)
-        {
-            _currentLocation = locationType;
+            _currentLocation = locationName;
         }
     }
 }
