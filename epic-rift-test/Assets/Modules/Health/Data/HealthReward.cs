@@ -8,6 +8,7 @@ namespace EpicRiftTest.Modules.Health.Data
     {
         public void ApplyReward(int value)
         {
+            HealthManager.Instance.TopUpHealth(value);
         }
     }
 }

@@ -8,6 +8,7 @@ namespace EpicRiftTest.Modules.Location.Data
     {
         public void ApplyReward(int value)
         {
+            LocationManager.Instance.PurchaseLocation(value);
         }
     }
 }

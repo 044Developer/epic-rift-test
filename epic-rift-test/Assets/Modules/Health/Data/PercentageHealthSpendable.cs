@@ -4,16 +4,16 @@ using EpicRiftTest.Modules.Core.Infrastructure.Data;
 namespace EpicRiftTest.Modules.Health.Data
 {
     [Serializable]
-    public class HealthSpendable : ISpendable
+    public class PercentageHealthSpendable : ISpendable
     {
         public bool IsTransactionValid(int value)
         {
-            return HealthManager.Instance.HasEnoughHealth(value);
+            return HealthManager.Instance.HasEnoughHealthByPercentage(value);
         }
 
         public void ApplyTransaction(int value)
         {
-            HealthManager.Instance.TryPurchase(value);
+            HealthManager.Instance.SpendHealthFromPercentage(value);
         }
     }
 }

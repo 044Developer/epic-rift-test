@@ -48,7 +48,7 @@ namespace EpicRiftTest.Modules.Core.Infrastructure.Patterns
         {
             GameObject singleton = new GameObject();
             _instance = singleton.AddComponent<T>();
-            singleton.name = $"[SINGLETON] {typeof(T)}";
+            singleton.name = $"[SINGLETON] {typeof(T).Name}";
             DontDestroyOnLoad(singleton);
             Debug.Log($"[SINGLETON] An instance of {typeof(T)}  is needed in the scene, so '{singleton}' was created with DontDestroyOnLoad.");
         }

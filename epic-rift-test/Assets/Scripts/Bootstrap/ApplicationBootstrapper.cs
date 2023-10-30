@@ -3,19 +3,19 @@ using EpicRiftTest.Modules.Health;
 using EpicRiftTest.Modules.Location;
 using EpicRiftTest.Modules.Shop;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace EpicRiftTest.Bootstrap
 {
     public class ApplicationBootstrapper : MonoBehaviour
     {
+        private const int MAIN_SCENE_INDEX = 1;
+        
         private void Start()
         {
             InitManagers();
-        }
 
-        private void OnDestroy()
-        {
-            DisposeManagers();
+            LoadMainScene();
         }
 
         private void InitManagers()
@@ -26,12 +26,9 @@ namespace EpicRiftTest.Bootstrap
             ShopManager.Instance.Initialize();
         }
 
-        private void DisposeManagers()
+        private void LoadMainScene()
         {
-            HealthManager.Instance.Dispose();
-            GoldManager.Instance.Dispose();
-            LocationManager.Instance.Dispose();
-            ShopManager.Instance.Dispose();
+            SceneManager.LoadScene(sceneBuildIndex: MAIN_SCENE_INDEX);
         }
     }
 }

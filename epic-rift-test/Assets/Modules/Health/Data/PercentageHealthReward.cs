@@ -1,14 +1,14 @@
 using System;
 using EpicRiftTest.Modules.Core.Infrastructure.Data;
 
-namespace EpicRiftTest.Modules.Gold.Data
+namespace EpicRiftTest.Modules.Health.Data
 {
     [Serializable]
-    public class GoldReward : IReward
+    public class PercentageHealthReward : IReward
     {
         public void ApplyReward(int value)
         {
-            GoldManager.Instance.TopUpGold(value);
+            HealthManager.Instance.AddHealthFromPercentage(value);
         }
     }
 }

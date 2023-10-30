@@ -9,7 +9,7 @@ namespace EpicRiftTest.Modules.Shop.Data
         [SerializeField] private SpendableBundleItem _price = new();
         [SerializeField] private RewardBundleItem _reward = new();
 
-        public SpendableBundleItem Price => _price;
-        public RewardBundleItem Reward => _reward;
+        public SpendableBundleItem PriceBundleItem => _price;
+        public RewardBundleItem RewardBundleItem => _reward;
     }
 }

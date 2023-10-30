@@ -6,12 +6,6 @@ namespace EpicRiftTest.Modules.Shop
     {
         public void Initialize()
         {
-            
-        }
-        
-        public void Dispose()
-        {
-            
         }
     }
 }
