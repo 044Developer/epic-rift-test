@@ -15,18 +15,57 @@ MonoBehaviour:
   _shopBundles:
   - _price:
       _spendable:
-        rid: 2652374575031779351
+        rid: 2652374575031779353
       _value: 300
     _reward:
       _reward:
-        rid: 2652374575031779352
-      _value: asdasda
+        rid: 2652374575031779354
+      _value: Green
+  - _price:
+      _spendable:
+        rid: 2652374575031779355
+      _value: 25
+    _reward:
+      _reward:
+        rid: 2652374575031779354
+      _value: Yellow
+  - _price:
+      _spendable:
+        rid: 2652374575031779356
+      _value: 300
+    _reward:
+      _reward:
+        rid: 2652374575031779357
+      _value: 300
+  - _price:
+      _spendable:
+        rid: 2652374575031779358
+      _value: 300
+    _reward:
+      _reward:
+        rid: 2652374575031779359
+      _value: 50
   references:
     version: 2
     RefIds:
-    - rid: 2652374575031779351
+    - rid: 2652374575031779353
       type: {class: HealthSpendable, ns: EpicRiftTest.Modules.Health.Data, asm: Health}
       data: 
-    - rid: 2652374575031779352
-      type: {class: GoldReward, ns: EpicRiftTest.Modules.Gold.Data, asm: Gold}
+    - rid: 2652374575031779354
+      type: {class: LocationReward, ns: EpicRiftTest.Modules.Location.Data, asm: Location}
+      data: 
+    - rid: 2652374575031779355
+      type: {class: PercentageHealthSpendable, ns: EpicRiftTest.Modules.Health.Data, asm: Health}
+      data: 
+    - rid: 2652374575031779356
+      type: {class: GoldSpendable, ns: EpicRiftTest.Modules.Gold.Data, asm: Gold}
+      data: 
+    - rid: 2652374575031779357
+      type: {class: HealthReward, ns: EpicRiftTest.Modules.Health.Data, asm: Health}
+      data: 
+    - rid: 2652374575031779358
+      type: {class: GoldSpendable, ns: EpicRiftTest.Modules.Gold.Data, asm: Gold}
+      data: 
+    - rid: 2652374575031779359
+      type: {class: PercentageHealthReward, ns: EpicRiftTest.Modules.Health.Data, asm: Health}
       data: 

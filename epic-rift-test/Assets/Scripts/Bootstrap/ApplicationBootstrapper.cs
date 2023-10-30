@@ -1,7 +1,6 @@
 using EpicRiftTest.Modules.Gold;
 using EpicRiftTest.Modules.Health;
 using EpicRiftTest.Modules.Location;
-using EpicRiftTest.Modules.Shop;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,7 +22,6 @@ namespace EpicRiftTest.Bootstrap
             HealthManager.Instance.Initialize();
             GoldManager.Instance.Initialize();
             LocationManager.Instance.Initialize();
-            ShopManager.Instance.Initialize();
         }
 
         private void LoadMainScene()
